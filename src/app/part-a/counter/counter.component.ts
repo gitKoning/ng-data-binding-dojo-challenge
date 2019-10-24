@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { OnInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-count',
@@ -6,8 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class CounterComponent implements OnInit {
+  count = 0;
 
   constructor() { }
+
+  increment(){
+    this.count++;
+  }
+
+  decrement(){
+    this.count--;
+  }
 
   ngOnInit() {
   }
